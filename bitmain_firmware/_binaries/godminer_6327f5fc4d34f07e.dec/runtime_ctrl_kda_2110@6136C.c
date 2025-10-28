@@ -1,0 +1,85 @@
+void *runtime_ctrl_kda_2110()
+{
+  void *v0; // r0
+  void *v1; // r5
+  _QWORD v3[117]; // [sp+0h] [bp-3ACh] BYREF
+
+  memset(v3, 0, sizeof(v3));
+  LODWORD(v3[31]) = 3359051;
+  HIDWORD(v3[39]) = 210;
+  LODWORD(v3[40]) = 500;
+  LODWORD(v3[33]) = 6382699;
+  HIDWORD(v3[41]) = sensor_info_kda_2110;
+  v3[42] = qword_106574;
+  v3[43] = qword_10657C;
+  v3[44] = qword_106584;
+  v0 = calloc(1u, 0x3A8u);
+  LODWORD(v3[0]) = backend_init_base;
+  HIDWORD(v3[0]) = reset_base;
+  HIDWORD(v3[1]) = dhash_mining_stop_base;
+  HIDWORD(v3[2]) = backend_exit_base;
+  LODWORD(v3[3]) = push_work_base;
+  LODWORD(v3[1]) = dhash_mining_start_base;
+  LODWORD(v3[2]) = dhash_mining_reset_base;
+  LODWORD(v3[4]) = pop_ans_base;
+  LODWORD(v3[6]) = softreset_all_chip_kda;
+  LODWORD(v3[7]) = work_2_packet_kda;
+  HIDWORD(v3[3]) = async_push_work_base;
+  HIDWORD(v3[4]) = try_pop_ans_base;
+  LODWORD(v3[8]) = check_nonce_kda;
+  LODWORD(v3[9]) = global_idx_free_kda;
+  HIDWORD(v3[9]) = set_baud_kda_2110;
+  HIDWORD(v3[7]) = packet_2_nonce_kda;
+  HIDWORD(v3[8]) = global_idx_init_kda;
+  HIDWORD(v3[10]) = sub_5F820;
+  HIDWORD(v3[11]) = sub_5F560;
+  LODWORD(v3[12]) = sub_5F438;
+  LODWORD(v3[10]) = sub_5F93C;
+  LODWORD(v3[11]) = sub_5DCAC;
+  LODWORD(v3[13]) = sub_5EC94;
+  LODWORD(v3[14]) = sub_5E3FC;
+  HIDWORD(v3[14]) = get_chip_status_kda;
+  HIDWORD(v3[12]) = sub_5F05C;
+  HIDWORD(v3[13]) = sub_5E7A0;
+  HIDWORD(v3[15]) = get_sale_hashrate_kda;
+  HIDWORD(v3[16]) = get_qualify_nonce_num_kda;
+  LODWORD(v3[17]) = set_sensor_extern_mode_kda;
+  LODWORD(v3[15]) = get_theory_hashrate_kda;
+  LODWORD(v3[16]) = get_qualify_hashrate_kda;
+  HIDWORD(v3[17]) = read_sensor_temp_local_kda;
+  LODWORD(v3[18]) = read_sensor_temp_remote_kda;
+  HIDWORD(v3[18]) = parameter_update_kda;
+  LODWORD(v3[19]) = overclock_update_kda;
+  HIDWORD(v3[19]) = get_pcba_test_level_kda;
+  LODWORD(v3[20]) = get_packet_remain_len_kda;
+  LODWORD(v3[22]) = set_frequency_kda_2110;
+  HIDWORD(v3[22]) = sub_601C0;
+  LODWORD(v3[23]) = sub_5DCC4;
+  HIDWORD(v3[23]) = top_init_kda;
+  LODWORD(v3[24]) = dhash_start_kda;
+  LODWORD(v3[26]) = set_chipaddr_base;
+  HIDWORD(v3[26]) = set_inactive_base;
+  LODWORD(v3[27]) = set_chip_reg_base;
+  HIDWORD(v3[27]) = set_core_reg_base_9;
+  LODWORD(v3[28]) = set_core_reg_base_9;
+  LODWORD(v3[29]) = sync_get_status_base;
+  HIDWORD(v3[29]) = sync_get_chip_reg_base;
+  HIDWORD(v3[30]) = sync_get_core_reg_base3;
+  v3[35] = 0xF00000005CLL;
+  HIDWORD(v3[28]) = set_core_enable_base;
+  v3[36] = 0x4000003B8LL;
+  HIDWORD(v3[37]) = 2;
+  HIDWORD(v3[46]) = 2;
+  v3[34] = 0x100002110LL;
+  LODWORD(v3[47]) = 40;
+  v3[96] = 0x800000060LL;
+  v3[97] = 0xB00000124LL;
+  HIDWORD(v3[95]) = 400;
+  v1 = v0;
+  LOBYTE(v3[114]) = 10;
+  v3[115] = 11671;
+  v3[112] = 0x4420000042480000LL;
+  LODWORD(v3[113]) = 1520;
+  memcpy(v0, v3, 0x3A8u);
+  return v1;
+}

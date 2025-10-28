@@ -1,0 +1,72 @@
+void *machine_runtime_ctrl_rvn_2020()
+{
+  void *v0; // r0
+  void *v1; // r4
+  int v2; // r3
+  int v3; // r1
+  int v4; // r2
+  int v6; // r1
+  const char *v7; // r0
+  _DWORD v8[30]; // [sp+0h] [bp-78h] BYREF
+
+  memset(&v8[4], 0, 0x60u);
+  v0 = calloc(1u, 0x78u);
+  v1 = v0;
+  if ( v0 )
+  {
+    LOWORD(v2) = -4264;
+    LOWORD(v3) = -4264;
+    HIWORD(v2) = (unsigned int)&loc_4F020 >> 16;
+    HIWORD(v3) = (unsigned int)&loc_4F020 >> 16;
+    LOWORD(v4) = -14252;
+    v8[0] = v2;
+    LOWORD(v2) = -13884;
+    HIWORD(v4) = (unsigned int)&loc_4C91C >> 16;
+    HIWORD(v2) = (unsigned int)&loc_4CA8C >> 16;
+    v8[1] = v3;
+    LOWORD(v3) = -13268;
+    v8[2] = v4;
+    HIWORD(v3) = (unsigned int)&loc_4CCF4 >> 16;
+    LOWORD(v4) = -16440;
+    v8[3] = v2;
+    LOWORD(v2) = -13236;
+    HIWORD(v4) = (unsigned int)&loc_4C090 >> 16;
+    HIWORD(v2) = (unsigned int)&loc_4CD14 >> 16;
+    v8[7] = v3;
+    v8[10] = v4;
+    v8[11] = v2;
+    LOWORD(v4) = -7924;
+    LOWORD(v2) = -7712;
+    HIWORD(v4) = (unsigned int)&loc_4E1D4 >> 16;
+    HIWORD(v2) = (unsigned int)&loc_4E2A8 >> 16;
+    v8[12] = start_mining_base;
+    LOWORD(v3) = -11852;
+    v8[13] = v4;
+    LOWORD(v4) = -15948;
+    v8[14] = v2;
+    LOWORD(v2) = 23188;
+    HIWORD(v3) = (unsigned int)&loc_4D27C >> 16;
+    v8[15] = v3;
+    HIWORD(v4) = (unsigned int)&loc_4C27C >> 16;
+    v8[16] = v4;
+    HIWORD(v2) = (unsigned int)"/release/build/godminer-origin_godminer-new/machine_runtime/hns_2130/machine_runtime_hns_2130.c" >> 16;
+    v8[29] = v2;
+    v8[19] = 35;
+    v8[26] = 1145569280;
+    v8[28] = 1065353216;
+    v8[20] = 9600;
+    v8[21] = 9600;
+    v8[22] = 20;
+    v8[24] = 1480;
+    memcpy(v0, v8, 0x78u);
+  }
+  else
+  {
+    LOWORD(v6) = 22536;
+    LOWORD(v7) = 5860;
+    HIWORD(v6) = (unsigned int)"/build/godminer-origin_godminer-new/machine_runtime/dash_1766/machine_runtime_dash_1766.c" >> 16;
+    HIWORD(v7) = (unsigned int)"failed" >> 16;
+    printf(v7, v6);
+  }
+  return v1;
+}

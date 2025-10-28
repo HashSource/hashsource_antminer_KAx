@@ -1,0 +1,34 @@
+int __fastcall set_debug_ctrl(int a1, int a2)
+{
+  char *v4; // r1
+  int v5; // r6
+  int v6; // r1
+  void (__fastcall *v7)(int, _DWORD *); // r3
+  _DWORD v9[7]; // [sp+28h] [bp-1020h] BYREF
+  int v10; // [sp+44h] [bp-1004h]
+  _DWORD v11[2]; // [sp+48h] [bp-1000h] BYREF
+  int v12; // [sp+50h] [bp-FF8h]
+  int v13; // [sp+54h] [bp-FF4h]
+
+  V_LOCK();
+  LOWORD(v4) = 588;
+  HIWORD(v4) = (unsigned int)": get test = %d" >> 16;
+  LOWORD(v5) = -15372;
+  HIWORD(v5) = (unsigned int)"Perform refb_clk_div2_en override" >> 16;
+  V_INT((int)v9, v4, *(int *)(a1 + 232));
+  logfmt_raw((char *)v11, 0x1000u, 0, v10, v9[0], v9[1], v9[2], v9[3], v9[4], v9[5], v9[6], v10, "%s...", v5 + 488);
+  V_UNLOCK();
+  LOWORD(v6) = -12308;
+  HIWORD(v6) = (unsigned int)"0" >> 16;
+  zlog(g_zc, v6, 171, v5 + 504, 14, 140, 60, v11);
+  v12 = 0;
+  v13 = 0;
+  v11[0] = a2;
+  v7 = *(void (__fastcall **)(int, _DWORD *))(a1 + 248);
+  v11[1] = 0;
+  LOBYTE(v12) = 1;
+  HIWORD(v12) = 80;
+  v7(a1, v11);
+  usleep(0x2710u);
+  return 0;
+}

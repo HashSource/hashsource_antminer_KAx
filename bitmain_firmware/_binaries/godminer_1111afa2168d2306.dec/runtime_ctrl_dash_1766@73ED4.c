@@ -1,0 +1,190 @@
+void *runtime_ctrl_dash_1766()
+{
+  unsigned int v0; // r12
+  __int64 v1; // r0
+  unsigned int v2; // r6
+  unsigned int v3; // r4
+  unsigned int v4; // lr
+  int v5; // r3
+  __int64 v6; // r0
+  int v7; // r2
+  unsigned int v8; // r8
+  unsigned int v9; // r7
+  int v10; // r9
+  __int64 v11; // r0
+  void *v12; // r0
+  _QWORD v14[148]; // [sp+0h] [bp-4A0h] BYREF
+
+  memset(v14, 0, sizeof(v14));
+  LOWORD(v0) = -13056;
+  LOWORD(v1) = -12488;
+  WORD2(v1) = -12388;
+  HIWORD(v0) = (unsigned int)&loc_CCD38 >> 16;
+  WORD1(v1) = (unsigned int)&loc_CCF70 >> 16;
+  HIWORD(v1) = (unsigned int)&loc_CCFD4 >> 16;
+  v14[0] = __PAIR64__(v1, v0);
+  LOWORD(v2) = -12372;
+  LOWORD(v3) = -12336;
+  LODWORD(v14[2]) = HIDWORD(v1);
+  LOWORD(v4) = -14216;
+  LOWORD(v0) = -13788;
+  LOWORD(v1) = -13828;
+  WORD2(v1) = -13100;
+  HIWORD(v2) = (unsigned int)&loc_CCFE4 >> 16;
+  HIWORD(v3) = (unsigned int)&loc_CD008 >> 16;
+  HIWORD(v4) = (unsigned int)&loc_CC8B0 >> 16;
+  HIWORD(v0) = (unsigned int)&loc_CCA5C >> 16;
+  WORD1(v1) = (unsigned int)&loc_CCA34 >> 16;
+  HIWORD(v1) = (unsigned int)&loc_CCD0C >> 16;
+  v14[3] = __PAIR64__(v3, v2);
+  LOWORD(v2) = -13072;
+  v14[4] = __PAIR64__(v0, v4);
+  LOWORD(v3) = -1660;
+  LOWORD(v4) = -2860;
+  v14[5] = v1;
+  LOWORD(v0) = 11500;
+  LOWORD(v1) = 6076;
+  WORD2(v1) = -4196;
+  HIWORD(v2) = (unsigned int)&loc_CCD28 >> 16;
+  HIWORD(v3) = (unsigned int)&loc_6F98C >> 16;
+  HIWORD(v4) = (unsigned int)&loc_6F4DC >> 16;
+  HIWORD(v0) = (unsigned int)&loc_72CF4 >> 16;
+  WORD1(v1) = (unsigned int)&loc_717C4 >> 16;
+  HIWORD(v1) = (unsigned int)&loc_6EFA4 >> 16;
+  LODWORD(v14[6]) = v2;
+  HIDWORD(v14[7]) = v3;
+  LOWORD(v2) = -3280;
+  HIDWORD(v14[8]) = v4;
+  LOWORD(v3) = 13980;
+  v14[9] = __PAIR64__(v1, v0);
+  LOWORD(v4) = 6052;
+  LOWORD(v0) = 5768;
+  LODWORD(v14[10]) = HIDWORD(v1);
+  LOWORD(v1) = -972;
+  WORD2(v1) = 5044;
+  HIWORD(v2) = (unsigned int)&loc_6F338 >> 16;
+  HIWORD(v3) = (unsigned int)&loc_736A4 >> 16;
+  HIWORD(v4) = (unsigned int)&loc_717AC >> 16;
+  HIWORD(v0) = (unsigned int)&loc_71690 >> 16;
+  WORD1(v1) = (unsigned int)&loc_6FC3C >> 16;
+  HIWORD(v1) = (unsigned int)&loc_713BC >> 16;
+  HIDWORD(v14[10]) = v2;
+  v14[11] = __PAIR64__(v4, v3);
+  LOWORD(v5) = -20956;
+  LOWORD(v2) = 4056;
+  v14[12] = __PAIR64__(v1, v0);
+  LOWORD(v3) = 3088;
+  LOWORD(v4) = 1820;
+  HIDWORD(v14[13]) = HIDWORD(v1);
+  LOWORD(v0) = 888;
+  LOWORD(v1) = -4744;
+  WORD2(v1) = -4736;
+  HIWORD(v5) = (unsigned int)"ckb" >> 16;
+  HIWORD(v2) = (unsigned int)&loc_70FE0 >> 16;
+  HIWORD(v3) = (unsigned int)&loc_70C18 >> 16;
+  HIWORD(v4) = (unsigned int)&loc_70724 >> 16;
+  HIWORD(v0) = (unsigned int)&loc_70380 >> 16;
+  WORD1(v1) = (unsigned int)get_theory_hashrate_dash >> 16;
+  HIWORD(v1) = (unsigned int)&loc_6ED88 >> 16;
+  v14[14] = __PAIR64__(v3, v2);
+  v14[15] = __PAIR64__(v0, v4);
+  LOWORD(v2) = -4680;
+  LOWORD(v3) = -4544;
+  *(_QWORD *)((char *)&v14[16] + 4) = v1;
+  LOWORD(v4) = -4416;
+  LOWORD(v0) = -3260;
+  LOWORD(v1) = 12484;
+  WORD2(v1) = 12072;
+  HIWORD(v2) = (unsigned int)&loc_6EDC0 >> 16;
+  HIWORD(v3) = (unsigned int)&loc_6EE48 >> 16;
+  HIWORD(v4) = (unsigned int)&loc_6EEC8 >> 16;
+  HIWORD(v0) = (unsigned int)&loc_6F34C >> 16;
+  WORD1(v1) = (unsigned int)&loc_730CC >> 16;
+  HIWORD(v1) = (unsigned int)&loc_72F30 >> 16;
+  HIDWORD(v14[17]) = v2;
+  v14[18] = __PAIR64__(v4, v3);
+  LOWORD(v3) = 10520;
+  LOWORD(v4) = 8104;
+  v14[19] = __PAIR64__(v1, v0);
+  HIWORD(v3) = (unsigned int)&loc_72920 >> 16;
+  HIWORD(v4) = (unsigned int)&loc_71FB0 >> 16;
+  v14[20] = __PAIR64__(v3, HIDWORD(v1));
+  LOWORD(v0) = -4272;
+  v6 = *(_QWORD *)(v5 + 1540);
+  HIWORD(v0) = (unsigned int)sub_6EF58 >> 16;
+  LOWORD(v2) = -13796;
+  HIDWORD(v14[21]) = v4;
+  LOWORD(v3) = 12596;
+  BYTE4(v14[42]) = BYTE4(v6);
+  LOWORD(v7) = 10172;
+  LOWORD(v4) = -948;
+  WORD2(v6) = -12028;
+  LODWORD(v14[42]) = v6;
+  HIWORD(v2) = (unsigned int)&loc_CCA54 >> 16;
+  LODWORD(v14[22]) = v0;
+  HIWORD(v3) = (unsigned int)&loc_7313C >> 16;
+  HIWORD(v7) = (unsigned int)&loc_727C4 >> 16;
+  HIWORD(v4) = (unsigned int)&loc_6FC54 >> 16;
+  HIWORD(v6) = (unsigned int)&loc_CD13C >> 16;
+  LOWORD(v0) = 14252;
+  LOWORD(v6) = 14572;
+  v14[25] = __PAIR64__(v3, v2);
+  HIWORD(v0) = (unsigned int)&loc_737B4 >> 16;
+  LODWORD(v14[26]) = v7;
+  WORD1(v6) = (unsigned int)&loc_738F4 >> 16;
+  v14[27] = __PAIR64__(v0, v4);
+  LOWORD(v8) = -1232;
+  HIDWORD(v14[33]) = HIDWORD(v6);
+  LOWORD(v9) = -13804;
+  LOWORD(v2) = -11820;
+  LOWORD(v3) = -11492;
+  LOWORD(v7) = -6384;
+  LOWORD(v4) = -3404;
+  WORD2(v6) = -1764;
+  HIWORD(v7) = (unsigned int)&loc_CE748 >> 16;
+  HIWORD(v8) = (unsigned int)&loc_6FB38 >> 16;
+  HIDWORD(v14[28]) = v6;
+  HIWORD(v9) = (unsigned int)&loc_CCA4C >> 16;
+  HIWORD(v2) = (unsigned int)&loc_CD20C >> 16;
+  HIWORD(v3) = (unsigned int)&loc_CD354 >> 16;
+  HIWORD(v4) = (unsigned int)&loc_CF2EC >> 16;
+  HIWORD(v6) = (unsigned int)&loc_CF954 >> 16;
+  LOWORD(v10) = 10996;
+  LOWORD(v0) = -2760;
+  LOWORD(v6) = -11708;
+  v14[24] = __PAIR64__(v9, v8);
+  HIWORD(v10) = (unsigned int)&loc_72AFC >> 16;
+  v14[34] = __PAIR64__(v3, v2);
+  LODWORD(v14[35]) = v7;
+  HIDWORD(v14[35]) = v7;
+  HIWORD(v0) = (unsigned int)&loc_CF570 >> 16;
+  v14[36] = __PAIR64__(v0, v4);
+  HIDWORD(v14[39]) = HIDWORD(v6);
+  WORD1(v6) = (unsigned int)&loc_CD27C >> 16;
+  LODWORD(v14[21]) = v10;
+  LODWORD(v14[37]) = v6;
+  HIBYTE(v14[42]) = 0;
+  *(_WORD *)((char *)&v14[42] + 5) = 0;
+  LODWORD(v14[40]) = 14660;
+  v14[43] = 0x100001766LL;
+  v14[44] = 0xC0000007ELL;
+  v14[45] = 0x10000000CLL;
+  v11 = *(_QWORD *)(v5 + 1548);
+  HIDWORD(v14[67]) = 1;
+  *(_QWORD *)((char *)&v14[48] + 4) = v11;
+  LOBYTE(v14[126]) = 12;
+  HIDWORD(v14[50]) = sensor_info_dash_1766;
+  v14[51] = qword_1937A8;
+  v14[52] = qword_1937B0;
+  HIDWORD(v14[105]) = 176;
+  LODWORD(v14[125]) = 1420;
+  v14[124] = 0x43C8000042480000LL;
+  v14[53] = qword_1937B8;
+  v14[127] = 1597;
+  HIDWORD(v14[46]) = 2;
+  LODWORD(v14[56]) = 35;
+  v14[106] = 0x400000050LL;
+  v14[107] = 0xA00000056LL;
+  v12 = calloc(1u, 0x4A0u);
+  return memcpy(v12, v14, 0x4A0u);
+}
